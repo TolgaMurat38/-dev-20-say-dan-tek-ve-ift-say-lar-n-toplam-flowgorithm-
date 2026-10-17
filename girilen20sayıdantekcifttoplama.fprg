@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="girilen20say&#305;dantekcifttoplama"/>
+        <attribute name="authors" value="Tolga"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-18 12:12:07 &#214;&#214;"/>
+        <attribute name="created" value="VG9sZ2E7REVMTDsyMDI2LTEwLTE3OzExOjQ4OjU1IMOWUzsyMjE5"/>
+        <attribute name="edited" value="VG9sZ2E7REVMTDsyMDI2LTEwLTE4OzEyOjEyOjA3IMOWw5Y7MjsyNDQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tek, cift, i, sayi" type="Integer" array="False" size=""/>
+            <assign variable="tek" expression="0"/>
+            <assign variable="cift" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=20">
+                <output expression="&quot;sayi &quot;" newline="False"/>
+                <output expression="i" newline="False"/>
+                <output expression="&quot; girin.&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi%2==1">
+                    <then>
+                        <assign variable="tek" expression="tek+sayi"/>
+                    </then>
+                    <else>
+                        <assign variable="cift" expression="cift+sayi"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;&#231;ift olan say&#305;lar&#305;n toplam&#305;=&quot;" newline="False"/>
+            <output expression="cift" newline="True"/>
+            <output expression="&quot;tek say&#305;lar&#305;n toplam&#305;=&quot;" newline="False"/>
+            <output expression="tek" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
